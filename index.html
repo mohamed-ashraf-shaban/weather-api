@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="site-content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="">
+         <div class="logo-title">
+           <h1>Weather</h1>
+           <small>tagline goes here</small>
+         </div>
+        </a>
+        <!-- end logo -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+          <ul class="navbar-nav d-flex justify-content-between ms-auto mb-2 mb-lg-0">
+            <li class="btn-home nav-item me-3">
+              <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item  me-3">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item  me-3">
+              <a class="nav-link" href="#">Photo</a>
+            </li>
+            <li class="nav-item  me-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+           
+          </ul>
+      
+        </div>
+      </div>
+    </nav>
+   
+   
+
+    <!-- main header -->
+    <section class="main-header">
+      <div class="input-group mb-3 w-75 mx-auto">
+        <input id="a" onkeyup="getdata(document.getElementById('a').value)" type="text" class="search form-control bg-dark text-white" placeholder="Find Your Location" aria-label="Find Your Location">
+        <!-- <input  onblur='getdata(document.getElementById("a").value)' class="find btn btn-primary" value="Find"> -->
+      </div>
+    </section>
+    <!-- end main -->
+
+    <section class="weather mb-5">
+      <div class="container">
+        <div id="display" class="row bg-darklight">
+         
+
+
+        </div>
+      </div>
+    </section>
+   <section class="footer py-5">
+    <div class="container">
+      <div class="footer-container d-flex justify-content-between align-items-center mb-4">
+        <div class="input-group w-75">
+          <input type="text" class="form-control bg-dark" placeholder="Enter Your Email To Subscribe" aria-label="Enter Your Email To Subscribe">
+          <input class="subscripe btn btn-primary px-4" type="button" value="subscribe"/>
+        </div>
+        <div class="icons-footer text-info">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+      <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+   </section>
+
+  </div>
+
+
+  <!-- start nav-bar -->
+  
+  <!-- end nav-bar -->
+    
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
